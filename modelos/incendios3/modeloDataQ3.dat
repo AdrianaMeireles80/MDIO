@@ -1,0 +1,15 @@
+/*********************************************
+ * OPL 12.8.0.0 Data
+ * Author: Ricardo
+ * Creation Date: 9 Dec 2018 at 16:36:56
+ *********************************************/
+SheetConnection sheet1("matrizCustos.xlsx");
+SheetConnection sheet2("matrizSolucoesQ3.xlsx");
+SheetConnection sheet3("matrizSolucoes1Q3.xlsx");
+SheetConnection sheet4("matrizSolucoes2Q3.xlsx");
+
+c from SheetRead(sheet1,"'Folha1'!E7:BA55");
+
+z to SheetWrite(sheet2,"'Folha1'!E7:BA55");
+b to SheetWrite(sheet3,"'Folha1'!E7:BA7");
+t to SheetWrite(sheet4,"'Folha1'!E7:BA55");

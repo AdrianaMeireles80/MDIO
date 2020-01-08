@@ -1,0 +1,13 @@
+/*********************************************
+ * OPL 12.8.0.0 Data
+ * Author: Ricardo
+ * Creation Date: 5 Dec 2018 at 23:13:02
+ *********************************************/
+SheetConnection sheet1("matrizCustos.xlsx"); 
+SheetConnection sheet2("matrizSolucoesPrimal.xlsx");
+
+n = 49;
+
+c from SheetRead(sheet1,"'Folha1'!E7:BA55");
+
+x to SheetWrite(sheet2,"'Folha1'!E7:BA55");
